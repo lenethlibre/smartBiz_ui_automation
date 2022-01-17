@@ -1,0 +1,17 @@
+/node_modules
+/client/bower_components
+*.iml
+/coverage
+/target
+/dist
+/package-lock.json
+.DS_Store
+docker.tar
+*.lock
+.project
+*.log
+/typeScript
+.tmp
+*.idea
+*.vscode
+.trash
