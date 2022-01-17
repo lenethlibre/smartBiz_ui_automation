@@ -85,7 +85,6 @@ export class ApplicationPage {
         await browser.wait(ExpectedConditions.elementToBeClickable(this.privacyPolicyCheckbox), browser.params.pageLoadTimeout,
             "Privacy Policy Checkbox is not clickable");
         return this.privacyPolicyCheckbox.click();
-       
     }
 
     public async clickPrequalifyButton() {

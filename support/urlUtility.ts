@@ -7,7 +7,7 @@ export class UrlUtility {
         let env = process.env.TEST_ENV;
 
         switch (env) {
-            case 'qa': {
+            case 'test': {
                 finalURL = 'https://qa-app02.smartbizloans.com/apply?partner_id=smartbiz';
                 break;
             }

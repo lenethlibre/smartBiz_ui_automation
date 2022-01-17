@@ -21,7 +21,4 @@ export class FinancingNeedsPage {
         return browser.wait(ExpectedConditions.textToBePresentInElement(this.financingNeedsPageSubHeader, "First, how soon do you need funding?"), browser.params.pageLoadTimeout,
             "Financing Needs Page is not loaded");
     }
-
-    
-
 }

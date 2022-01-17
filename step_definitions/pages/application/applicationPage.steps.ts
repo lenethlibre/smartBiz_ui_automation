@@ -3,19 +3,17 @@ import { browser } from "protractor";
 import { UrlUtility } from "../../../support/urlUtility";
 import { ApplicationPage } from "./applicationPage";
 
-
-
 const applicationPage: ApplicationPage = new ApplicationPage();
 
 Given(/^I navigate to the Smartbiz Loans site$/, async () => {
     await UrlUtility.navigateToSite();
 });
 
-Then(/^I will see the application page$/, async () => {
+Then(/^I should see the application page$/, async () => {
     await applicationPage.confirmPageHasLoaded();
 });
 
-Then(/^I will see that the prequalify button is (disabled|enabled)$/, async (expectedState: string) => {
+Then(/^I should see that the prequalify button is (disabled|enabled)$/, async (expectedState: string) => {
     await applicationPage.preQualifyButtonState(expectedState);
 });
 

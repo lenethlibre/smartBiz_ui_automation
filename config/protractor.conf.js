@@ -25,8 +25,8 @@ let runDateTime = date.toLocaleDateString() + "  " + date.toLocaleTimeString();
  * Set variables to control configuration based on defined environment in package.json scripts
  */
 
-if (process.env.TEST_ENV === 'qa') {
-    environment = 'qa';
+if (process.env.TEST_ENV === 'test') {
+    environment = 'test';
     args = ['--no-sandbox', '--headless', '--disable-infobars', '--window-size=1920x1080', '--disable-gpu'];
 }
 
