@@ -17,10 +17,4 @@ export class PreLoanPage {
         return browser.wait(ExpectedConditions.textToBePresentInElement(this.preLoanPageHeader, "We know you’re busy—this takes less than 5 minutes!"), browser.params.pageLoadTimeout,
         "Pre Loan Page is not loaded");;
     }
-
-    public async clickLetsGetStartedButton() {
-        await browser.wait(ExpectedConditions.elementToBeClickable(this.letsGetStartedButton), browser.params.pageLoadTimeout,
-        "Lets Get Started Button is not clickable");
-        return this.letsGetStartedButton.click();
-    }
 }

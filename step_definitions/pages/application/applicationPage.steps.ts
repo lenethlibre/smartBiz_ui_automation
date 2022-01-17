@@ -3,8 +3,6 @@ import { browser } from "protractor";
 import { UrlUtility } from "../../../support/urlUtility";
 import { ApplicationPage } from "./applicationPage";
 
-
-
 const applicationPage: ApplicationPage = new ApplicationPage();
 
 Given(/^I navigate to the Smartbiz Loans site$/, async () => {

@@ -5,10 +5,7 @@ import { CommonFunctions } from "../../../support/commonFunctions";
 
 export class AnnualRevenuePage {
     private annualRevenuePageSubHeader: ElementFinder;
-    private saveAndContinueButton: ElementFinder;
-    private trustScore: ElementFinder;
-
-
+   
     constructor() {
         this.annualRevenuePageSubHeader = element(by.xpath("//h1[@class='page-subheader-zilla']"));
     }
