@@ -24,9 +24,9 @@ Feature: SmartBiz Smoke Test
         When I click on Save & Continue button
         Then I should see Inception Date Page is displayed
         And I should see that the url contains /apply/prequalify/business/inception_date
-        And I should see the following buttons are visible: Less than 2 years ago,2-5 years ago,6-10 years ago,More than 10 years ago
+        And I should see the following buttons are visible: Less than 6 months ago,6 to 12 months ago,13 to 24 months ago,25 to 60 months ago,61 to 120 months ago,More than 120 months ago
         And I should see the button Save & Continue is disabled
-        When I click on 6-10 years ago button
+        When I click on More than 120 months ago button
         Then I should see the button Save & Continue is enabled
         When I click on Save & Continue button
         Then I should see Industry Page is displayed

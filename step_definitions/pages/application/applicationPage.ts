@@ -71,7 +71,7 @@ export class ApplicationPage {
     }
 
     public async clickSBALoanSelector() {
-        await BrowserUtility.pageScrollToObject(this.sbaLoanSelector);
+        await BrowserUtility.pageScrollToObject(this.howDidYouHearAboutUsDropDown);
         await browser.wait(ExpectedConditions.elementToBeClickable(this.sbaLoanSelector), browser.params.pageLoadTimeout,
             "SBA Loan selector is not clickable");
         return this.sbaLoanSelector.click();
