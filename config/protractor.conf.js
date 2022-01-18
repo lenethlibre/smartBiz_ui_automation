@@ -27,7 +27,9 @@ let runDateTime = date.toLocaleDateString() + "  " + date.toLocaleTimeString();
 
 if (process.env.TEST_ENV === 'test') {
     environment = 'test';
-    args = ['--no-sandbox', '--headless', '--disable-infobars', '--window-size=1920x1080', '--disable-gpu'];
+    args = ['--no-sandbox', '--headless', '--disable-infobars', '--window-size=1920,1080', '--disable-gpu'];
+}else{
+    args = ['--no-sandbox', '--headless', '--disable-infobars', '--window-size=1920,1080', '--disable-gpu'];
 }
 
 if (typeof process.env.TEST_SUITE == 'undefined') {
