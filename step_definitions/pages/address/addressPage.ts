@@ -27,7 +27,7 @@ export class AddressPage {
       "Address text input is not clickable");
     await this.addressTextInput.sendKeys(address);
     await browser.wait(ExpectedConditions.elementToBeClickable(addressToSelect), browser.params.pageLoadTimeout,
-      "ListBox is not clickable");
+      "Address Autocomplete is not clickable");
     return addressToSelect.click();
   }
 
